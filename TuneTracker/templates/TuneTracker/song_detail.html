@@ -1,0 +1,8 @@
+{% extends 'TuneTracker/base.html' %}
+
+{% block content %}
+    <article class="song">
+        <h3>{{ song.title }}</h3>
+        <p>Artist: {{ song.artist.name }}</p>
+    </article>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'TuneTracker/base.html' %}
+
+{% block content %}
+    {% for song in songs %}
+        <article class="song">
+            <h3><a href="{% url 'song_detail' pk=song.pk %}">{{ song.title }}</a></h3>
+        </article>
+    {% endfor %}
+{% endblock %}
+
+
+
+
